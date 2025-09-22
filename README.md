@@ -28,8 +28,7 @@ A LINE chatbot that serves as a personal assistant by integrating restaurant rec
 
 ---
 # Contributors
-Hsu Hsuan-Kuang
-Hsu Ya-Chuan
-Lin Wen-Chen
-git clone https://github.com/your-repo/line-secretary.git
-cd line-secretary
+- Hsu Ya-Chuan
+- Hsu Hsuan-Kuang
+- Lin Wen-Chen
+
