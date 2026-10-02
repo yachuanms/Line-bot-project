@@ -366,7 +366,7 @@ def handle_location(event):
             dummy_response = "這是為您查詢的店家列表："
             restaurants = find_nearby_restaurants(
                 lat, lon, radius=1000,
-                API_KEY='AIzaSyAM0yh2cwd1jlmbvYC3lq2-cGJl7bA53o0',
+                API_KEY='',
                 keyword=food
             )
             messages.append(TextMessage(text=dummy_response))
