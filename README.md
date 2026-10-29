@@ -29,7 +29,7 @@ The backend is built with **Python and Flask** and communicates with LINE throug
 | **Platform** | LINE Messaging API |
 | **External APIs** | Google Maps API, Google Calendar API, Taiwan Weather API, Gemini API |
 | **Authentication** | OAuth2 |
-| **Deployment** | Vercel |
+| **Deployment** | Render |
 | **Development Tools** | Git, GitHub, Ngrok |
 
 ---
@@ -67,7 +67,7 @@ The backend is built with **Python and Flask** and communicates with LINE throug
 
 During development, the Flask server was initially hosted locally and exposed through an **Ngrok HTTPS tunnel** so that LINE could send webhook events to the application.
 
-The backend was later deployed on **Vercel**, removing the need to keep a local server running.
+The backend was later deployed on **Render**, removing the need to keep a local server running.
 
 ---
 
@@ -112,11 +112,11 @@ LINE User
 
 The backend was originally run locally and exposed through an **Ngrok tunnel** during development.
 
-It has since been deployed on **Vercel** for persistent webhook access.
+It has since been deployed on **Render** for persistent webhook access.
 
 ### Continuous Deployment
 
-The GitHub repository is connected directly to the Vercel project:
+The GitHub repository is connected directly to the Render project:
 
 ```text
 Push to main
@@ -125,13 +125,13 @@ Push to main
 GitHub Repository
      │
      ▼
-Vercel Build & Deployment
+Render Build & Deployment
      │
      ▼
 Updated Flask Backend
 ```
 
-Every push to the `main` branch automatically triggers a new deployment on Vercel.
+Every push to the `main` branch automatically triggers a new deployment on Render.
 
 This removes the need to manually redeploy the application or keep a local Ngrok server running for the LINE webhook.
 
@@ -333,7 +333,7 @@ This allows users to access several independent services through one LINE conver
 
 The application initially depended on a local Flask server and Ngrok tunnel.
 
-Migrating the backend to Vercel provided a persistent webhook endpoint and enabled automatic deployment from GitHub.
+Migrating the backend to Render provided a persistent webhook endpoint and enabled automatic deployment from GitHub.
 
 ---
 
@@ -346,7 +346,7 @@ Current limitations include:
 - Google Calendar integration requires OAuth2 authorization
 - Some LINE message layouts may appear differently between desktop and mobile clients
 
-The original dependency on a continuously running local server and Ngrok tunnel was resolved by deploying the backend to Vercel.
+The original dependency on a continuously running local server and Ngrok tunnel was resolved by deploying the backend to Render.
 
 ---
 
@@ -371,7 +371,7 @@ My contributions included:
 - Designed and implemented all six feature modules (FoodieHunt, PlanPal, SkyCast, LingoGem, Daily Oracle, and Fortune Whisper), including their integration with the Google Maps, Google Calendar, Taiwan Weather, and Gemini APIs
 - Built the Flask webhook handler that parses incoming LINE events and routes requests to the corresponding feature module
 - Implemented OAuth2 authorization for Google Calendar access
-- Migrated the backend deployment to **Vercel** and connected the project to GitHub for automatic redeployment
+- Migrated the backend deployment to **Render** and connected the project to GitHub for automatic redeployment
 
 ---
 
